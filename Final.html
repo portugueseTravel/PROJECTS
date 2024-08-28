@@ -1,0 +1,162 @@
+
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script crossorigin="" src="./Final_files/react.development.js.descarregar"></script>
+        <script crossorigin="" src="./Final_files/react-dom.development.js.descarregar"></script>
+        <script src="./Final_files/babel.min.js.descarregar"></script>
+        
+        
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        
+    <script>"use strict";
+
+/**lets build our ID card */
+/**tree areas
+ * Introdution --Header
+ * Link Buttons --Body 1
+ * About and Interests -- Body 2
+ * Social Logos -- Footer
+ */
+
+function Header() {
+    return React.createElement(
+        "div",
+        { className: "header" },
+        React.createElement("img", { className: "image_perfil", src: "./perfil_foto.jpg" }),
+        React.createElement(
+            "h1",
+            { className: "header_name" },
+            "Nuno Abrantes"
+        ),
+        React.createElement(
+            "h2",
+            { className: "header_profession" },
+            "OT Engineer"
+        ),
+        React.createElement(
+            "h2",
+            { className: "header_contact" },
+            "Contact: 930456476"
+        )
+    );
+}
+
+function Body1() {
+    return React.createElement(
+        "div",
+        { className: "body1" },
+        React.createElement(
+            "button",
+            { className: "button_linkdin" },
+            React.createElement(
+                "i",
+                { className: "fa fa-linkedin-square" },
+                " "
+            ),
+            "Linkdin"
+        ),
+        React.createElement(
+            "button",
+            { className: "button_email" },
+            React.createElement("i", { className: "fa fa-envelope" }),
+            "Email"
+        )
+    );
+}
+
+function Body2() {
+    return React.createElement(
+        "div",
+        { className: "body2" },
+        React.createElement(
+            "h2",
+            { className: "body2_about" },
+            "About"
+        ),
+        React.createElement(
+            "h3",
+            { className: "body2_about_text" },
+            "Hi! My name is Nuno and I love to pratice sports"
+        ),
+        React.createElement(
+            "h2",
+            { className: "body2_interess" },
+            "Interests"
+        ),
+        React.createElement(
+            "h3",
+            { className: "body2_interess_text" },
+            "I am interested in a remote job in web development area, that allows me geographic flexibility"
+        )
+    );
+}
+
+function Footer() {
+    return React.createElement(
+        "div",
+        { className: "footer" },
+        React.createElement("i", { "class": "fa fa-twitter-square" }),
+        React.createElement("i", { "class": "fa fa-facebook-square" }),
+        React.createElement("i", { "class": "fa fa-instagram" }),
+        React.createElement("i", { "class": "fa fa-github-square" })
+    );
+}
+
+function IdCard() {
+    return React.createElement(
+        "div",
+        { className: "container" },
+        React.createElement(Header, null),
+        React.createElement(Body1, null),
+        React.createElement(Body2, null),
+        React.createElement(Footer, null)
+    );
+}
+
+ReactDOM.render(React.createElement(IdCard, null), document.getElementById("root"));
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImluZGV4LmpzIl0sIm5hbWVzIjpbIkhlYWRlciIsIkJvZHkxIiwiQm9keTIiLCJGb290ZXIiLCJJZENhcmQiLCJSZWFjdERPTSIsInJlbmRlciIsImRvY3VtZW50IiwiZ2V0RWxlbWVudEJ5SWQiXSwibWFwcGluZ3MiOiI7O0FBQUE7QUFDQTs7Ozs7OztBQU9BLFNBQVNBLE1BQVQsR0FBa0I7QUFDZCxXQUNJO0FBQUE7QUFBQSxVQUFLLFdBQVUsUUFBZjtBQUNJLHFDQUFLLFdBQVUsY0FBZixFQUE4QixLQUFJLG1CQUFsQyxHQURKO0FBRUk7QUFBQTtBQUFBLGNBQUksV0FBVSxhQUFkO0FBQUE7QUFBQSxTQUZKO0FBR0k7QUFBQTtBQUFBLGNBQUksV0FBVSxtQkFBZDtBQUFBO0FBQUEsU0FISjtBQUlJO0FBQUE7QUFBQSxjQUFJLFdBQVUsZ0JBQWQ7QUFBQTtBQUFBO0FBSkosS0FESjtBQVFIOztBQUVELFNBQVNDLEtBQVQsR0FBaUI7QUFDYixXQUNJO0FBQUE7QUFBQSxVQUFLLFdBQVUsT0FBZjtBQUNJO0FBQUE7QUFBQSxjQUFRLFdBQVUsZ0JBQWxCO0FBQW1DO0FBQUE7QUFBQSxrQkFBRyxXQUFVLHVCQUFiO0FBQUE7QUFBQSxhQUFuQztBQUFBO0FBQUEsU0FESjtBQUVJO0FBQUE7QUFBQSxjQUFRLFdBQVUsY0FBbEI7QUFBaUMsdUNBQUcsV0FBVSxnQkFBYixHQUFqQztBQUFBO0FBQUE7QUFGSixLQURKO0FBTUg7O0FBRUQsU0FBU0MsS0FBVCxHQUFpQjtBQUNiLFdBQ0k7QUFBQTtBQUFBLFVBQUssV0FBVSxPQUFmO0FBQ0k7QUFBQTtBQUFBLGNBQUksV0FBVyxhQUFmO0FBQUE7QUFBQSxTQURKO0FBRUk7QUFBQTtBQUFBLGNBQUksV0FBVyxrQkFBZjtBQUFBO0FBQUEsU0FGSjtBQUdJO0FBQUE7QUFBQSxjQUFJLFdBQVcsZ0JBQWY7QUFBQTtBQUFBLFNBSEo7QUFJSTtBQUFBO0FBQUEsY0FBSSxXQUFXLHFCQUFmO0FBQUE7QUFBQTtBQUpKLEtBREo7QUFRSDs7QUFFRCxTQUFTQyxNQUFULEdBQWtCO0FBQ2QsV0FDSTtBQUFBO0FBQUEsVUFBSyxXQUFVLFFBQWY7QUFDSSxtQ0FBRyxTQUFNLHNCQUFULEdBREo7QUFFSSxtQ0FBRyxTQUFNLHVCQUFULEdBRko7QUFHSSxtQ0FBRyxTQUFNLGlCQUFULEdBSEo7QUFJSSxtQ0FBRyxTQUFNLHFCQUFUO0FBSkosS0FESjtBQVNIOztBQUtELFNBQVNDLE1BQVQsR0FBa0I7QUFDZCxXQUNRO0FBQUE7QUFBQSxVQUFLLFdBQVUsV0FBZjtBQUNZLDRCQUFDLE1BQUQsT0FEWjtBQUVZLDRCQUFDLEtBQUQsT0FGWjtBQUdZLDRCQUFDLEtBQUQsT0FIWjtBQUlZLDRCQUFDLE1BQUQ7QUFKWixLQURSO0FBUUg7O0FBR0RDLFNBQVNDLE1BQVQsQ0FBZ0Isb0JBQUMsTUFBRCxPQUFoQixFQUE0QkMsU0FBU0MsY0FBVCxDQUF3QixNQUF4QixDQUE1QiIsImZpbGUiOiJpbmRleC5qcyIsInNvdXJjZXNDb250ZW50IjpbIi8qKmxldHMgYnVpbGQgb3VyIElEIGNhcmQgKi9cclxuLyoqdHJlZSBhcmVhc1xyXG4gKiBJbnRyb2R1dGlvbiAtLUhlYWRlclxyXG4gKiBMaW5rIEJ1dHRvbnMgLS1Cb2R5IDFcclxuICogQWJvdXQgYW5kIEludGVyZXN0cyAtLSBCb2R5IDJcclxuICogU29jaWFsIExvZ29zIC0tIEZvb3RlclxyXG4gKi9cclxuXHJcbmZ1bmN0aW9uIEhlYWRlcigpIHtcclxuICAgIHJldHVybihcclxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImhlYWRlclwiPlxyXG4gICAgICAgICAgICA8aW1nIGNsYXNzTmFtZT1cImltYWdlX3BlcmZpbFwiIHNyYz1cIi4vcGVyZmlsX2ZvdG8uanBnXCI+PC9pbWc+XHJcbiAgICAgICAgICAgIDxoMSBjbGFzc05hbWU9XCJoZWFkZXJfbmFtZVwiPk51bm8gQWJyYW50ZXM8L2gxPlxyXG4gICAgICAgICAgICA8aDIgY2xhc3NOYW1lPVwiaGVhZGVyX3Byb2Zlc3Npb25cIj5PVCBFbmdpbmVlcjwvaDI+XHJcbiAgICAgICAgICAgIDxoMiBjbGFzc05hbWU9XCJoZWFkZXJfY29udGFjdFwiPkNvbnRhY3Q6IDkzMDQ1NjQ3NjwvaDI+XHJcbiAgICAgICAgPC9kaXY+XHJcbiAgICApXHJcbn1cclxuXHJcbmZ1bmN0aW9uIEJvZHkxKCkge1xyXG4gICAgcmV0dXJuKFxyXG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiYm9keTFcIj5cclxuICAgICAgICAgICAgPGJ1dHRvbiBjbGFzc05hbWU9XCJidXR0b25fbGlua2RpblwiPjxpIGNsYXNzTmFtZT1cImZhIGZhLWxpbmtlZGluLXNxdWFyZVwiPiA8L2k+TGlua2RpbjwvYnV0dG9uPlxyXG4gICAgICAgICAgICA8YnV0dG9uIGNsYXNzTmFtZT1cImJ1dHRvbl9lbWFpbFwiPjxpIGNsYXNzTmFtZT1cImZhIGZhLWVudmVsb3BlXCI+PC9pPkVtYWlsPC9idXR0b24+XHJcbiAgICAgICAgPC9kaXY+XHJcbiAgICApXHJcbn1cclxuXHJcbmZ1bmN0aW9uIEJvZHkyKCkge1xyXG4gICAgcmV0dXJuKFxyXG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiYm9keTJcIj5cclxuICAgICAgICAgICAgPGgyIGNsYXNzTmFtZSA9XCJib2R5Ml9hYm91dFwiPkFib3V0PC9oMj5cclxuICAgICAgICAgICAgPGgzIGNsYXNzTmFtZSA9XCJib2R5Ml9hYm91dF90ZXh0XCI+SGkhIE15IG5hbWUgaXMgTnVubyBhbmQgSSBsb3ZlIHRvIHByYXRpY2Ugc3BvcnRzPC9oMz5cclxuICAgICAgICAgICAgPGgyIGNsYXNzTmFtZSA9XCJib2R5Ml9pbnRlcmVzc1wiPkludGVyZXN0czwvaDI+XHJcbiAgICAgICAgICAgIDxoMyBjbGFzc05hbWUgPVwiYm9keTJfaW50ZXJlc3NfdGV4dFwiPkkgYW0gaW50ZXJlc3RlZCBpbiBhIHJlbW90ZSBqb2IgaW4gd2ViIGRldmVsb3BtZW50IGFyZWEsIHRoYXQgYWxsb3dzIG1lIGdlb2dyYXBoaWMgZmxleGliaWxpdHk8L2gzPlxyXG4gICAgICAgIDwvZGl2PlxyXG4gICAgKVxyXG59XHJcblxyXG5mdW5jdGlvbiBGb290ZXIoKSB7XHJcbiAgICByZXR1cm4oXHJcbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJmb290ZXJcIj5cclxuICAgICAgICAgICAgPGkgY2xhc3M9XCJmYSBmYS10d2l0dGVyLXNxdWFyZVwiPjwvaT5cclxuICAgICAgICAgICAgPGkgY2xhc3M9XCJmYSBmYS1mYWNlYm9vay1zcXVhcmVcIj48L2k+XHJcbiAgICAgICAgICAgIDxpIGNsYXNzPVwiZmEgZmEtaW5zdGFncmFtXCI+PC9pPlxyXG4gICAgICAgICAgICA8aSBjbGFzcz1cImZhIGZhLWdpdGh1Yi1zcXVhcmVcIj48L2k+XHJcbiAgICAgICAgICAgIFxyXG4gICAgICAgIDwvZGl2PlxyXG4gICAgKVxyXG59XHJcblxyXG5cclxuXHJcblxyXG5mdW5jdGlvbiBJZENhcmQgKCl7XHJcbiAgICByZXR1cm4gKCAgICAgICAgXHJcbiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiY29udGFpbmVyXCI+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIDxIZWFkZXIgLz5cclxuICAgICAgICAgICAgICAgICAgICAgICAgPEJvZHkxIC8+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIDxCb2R5MiAvPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICA8Rm9vdGVyIC8+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIFxyXG4gICAgICAgICAgICA8L2Rpdj4pXHJcbn1cclxuICAgXHJcblxyXG5SZWFjdERPTS5yZW5kZXIoPElkQ2FyZCAvPiwgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoXCJyb290XCIpKTsiXX0=</script><link rel="preconnect" href="https://fonts.googleapis.com/"><link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""><link href="./Final_files/css2" rel="stylesheet"><link rel="stylesheet" href="./Final_files/font-awesome.min.css"><link rel="stylesheet" href="./Final_files/style.css"></head>
+    <body>
+        <div id="root"><div class="container"><div class="header"><img class="image_perfil" src="./Final_files/perfil_foto.jpg"><h1 class="header_name">Nuno Abrantes</h1><h2 class="header_profession">OT Engineer</h2><h2 class="header_contact">Contact: 930456476</h2></div><div class="body1"><button class="button_linkdin"><i class="fa fa-linkedin-square"> </i>Linkdin</button><button class="button_email"><i class="fa fa-envelope"></i>Email</button></div><div class="body2"><h2 class="body2_about">About</h2><h3 class="body2_about_text">Hi! My name is Nuno and I love to pratice sports</h3><h2 class="body2_interess">Interests</h2><h3 class="body2_interess_text">I am interested in a remote job in web development area, that allows me geographic flexibility</h3></div><div class="footer"><i class="fa fa-twitter-square"></i><i class="fa fa-facebook-square"></i><i class="fa fa-instagram"></i><i class="fa fa-github-square"></i></div></div></div>
+        <script src="./Final_files/index.js.descarregar" type="text/babel"></script>
+    <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

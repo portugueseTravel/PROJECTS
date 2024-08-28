@@ -1,0 +1,225 @@
+.image_perfil {
+    position: absolute;
+    border-radius: 20px;
+    width: 300px;
+    height: 400px;
+    left: 0px;
+    top: 0px;
+}
+
+.header {
+position: absolute;
+width: 300px;
+height: 500px;
+left: 0px;
+top: 0px;
+background: #21222A;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.header_name {
+    position: absolute;
+    width: 322.39px;
+    height: 52.25px;
+    left: 51.61px;
+    top: 410px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 22.2535px;
+    line-height: 6px;
+    letter-spacing: 0.01px;
+    color: #f9fbfc;
+}
+
+.header_profession {
+    position: absolute;
+    width: 322.39px;
+    height: 42.25px;
+    left: 81.61px;
+    top: 430px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 15.2535px;
+    line-height: 6px;
+    letter-spacing: 0.15em;
+    color: #61DAFB;
+}
+
+.header_contact {
+    position: absolute;
+    width: 322.39px;
+    height: 42.25px;
+    left: 31.61px;
+    top: 455px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18.2535px;
+    line-height: 6px;
+    letter-spacing: 0.15em;
+    color: #61DAFB;
+}
+
+
+.body1 {
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    left: 0px;
+    top: 500px;
+    background: #21222A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+
+    .button_email {
+        position: absolute;
+        background-color: #edf1f3; /* Green */
+        border: 2px solid #e4e7e6;
+        color: rgb(14, 15, 15);
+        width: 100px;
+        height: 50px;
+        text-align: center;
+        border-radius: 8px;
+        left: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 16px;
+        font-weight: 600;
+        align-items: center;
+      }
+
+      .button_linkdin {
+        position: absolute;
+        width: 130px;
+        height: 50px;
+        background: #40b8f0;
+        border-radius: 10px;
+        color: #fff;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #084461;
+        left: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 16px;
+        font-weight: 800;
+      }
+
+      .body2 {
+        position: absolute;
+        width: 300px;
+        height: 220px;
+        left: 0px;
+        top: 600px;
+        background: #21222A;
+        justify-content: space-between;
+        align-items: center;
+        }
+
+   
+
+    .body2_about {
+        position: absolute;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 22.2535px;
+        left: 30;
+        color: #f9fbfc;
+    }
+
+    .body2_about_text {
+        position: absolute;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        left: 30;
+        top: 40;
+        width: 240;
+        color: #f9fbfc;
+        text-align: justify;
+    }
+
+    .body2_interess {
+        position: absolute;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 22.2535px;
+        top: 100;
+        left: 30;
+        color: #f9fbfc;
+    }
+
+    .body2_interess_text {
+        position: absolute;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        top: 140;
+        left: 30;
+        width: 240;
+        text-align: justify;
+        color: #f9fbfc;
+    }
+
+    .footer {
+        position: absolute;
+        width: 300px;
+        height: 100px;
+        left: 0px;
+        top: 820px;
+        background: #0d0d0e;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        }
+
+        .fa-linkedin-square {
+            font-size: 36px; 
+            color:white;
+
+        }
+    
+        .fa-envelope {
+            font-size: 26px;
+        }
+
+        .fa-twitter-square {
+            position:absolute;
+            font-size: 36px;
+            color:white; 
+            left: 50px;
+        }
+    
+        .fa-facebook-square {
+            position:absolute;
+            font-size: 36px;
+            color:white; 
+            left: 170px;
+        }
+
+        .fa-instagram {
+            position:absolute;
+            font-size: 36px;
+            color:white; 
+            left: 230px;
+        }
+    
+        .fa-github-square {
+            position:absolute;
+            font-size: 36px;
+            color:white; 
+            left: 110px;
+        }
